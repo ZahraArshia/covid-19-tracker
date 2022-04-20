@@ -1,3 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lato&display=swap');
+
 body {
   margin: 0;
+  padding: 0;
+  background-color: #4369b2;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+}
+
+/* navigation bar styles */
+nav {
+  background-color: #2d4573;
+  padding: 0.5% 6%;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainTitle a {
+  color: white;
+  text-decoration: none;
+}
+
+.navIcons {
+  display: flex;
+  flex-direction: row;
+}
+
+.navIcon {
+  margin-right: 50%;
+  cursor: pointer;
+}
+
+/* search bar styles */
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6%;
+  background-color: #2d4573;
+}
+
+.dateSelection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+
+.date {
+  margin-left: 10%;
+}
+
+.searchField {
+  font-family: 'Cabin', sans-serif;
+  border: none;
+  border-radius: 5px;
+  width: 15%;
+  padding: 0.5% 2%;
+}
+
+/* home page styles */
+.cover {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 20rem;
+  width: 100%;
+  background-image: url('https://www.nihr.ac.uk/images/news/long-covid-19-review.jpg');
+}
+
+.title {
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Countriescontainer {
+  padding: 0 2%;
+  list-style: none;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 600px) {
+  .Countriescontainer { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .Countriescontainer { grid-template-columns: repeat(6, 1fr); }
+}
+
+.countryCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #385892;
+  padding: 5% 10% 0 10%;
+  color: white;
+}
+
+.countryCard:hover {
+  border: solid 1px white;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.mapBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  width: 7rem;
+  height: 7rem;
+  opacity: 0.6;
+}
+
+/* details page styles */
+.regionContainer {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.detailsRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding-left: 5%;
+}
+
+.detailsRow:hover {
+  border: solid 1px white;
+}
+
+.regionContainer li:nth-child(2n+2) {
+  background-color: #385892;
+}
+
+.map2 {
+  width: 12rem;
+  height: 12rem;
+  opacity: 0.6;
+}
+
+.detailsBaner {
+  height: 15rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.countryStatus {
+  margin-left: 10%;
 }
