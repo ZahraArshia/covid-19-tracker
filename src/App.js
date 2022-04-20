@@ -1,24 +1,25 @@
+import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import Navigation from './components/Navigator';
+import HomePage from './components/HomePage';
+import DetailsPage from './components/DetailsPage';
+import { getCountries } from './redux/modules/country';
+
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    getCountries()(dispatch);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit
-          <code>
-            src/App.js
-          </code>
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/:id" element={<DetailsPage />} />
+      </Routes>
     </div>
+
   );
 }
 

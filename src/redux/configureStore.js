@@ -1,14 +1,15 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import createLogger from 'redux-logger';
-import todo from './modules/todo'
-
-const loggerMiddleware = createLogger(); // initialize logger
-
-const createStoreWithMiddleware = applyMiddleware(loggerMiddleware)(createStore); // apply logger to redux
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import logger from 'redux-logger';
+import thunk from 'redux-thunk';
+import countriesReducer from './modules/country';
 
 const reducer = combineReducers({
-  todo,
+  countriesReducer,
 });
 
-const configureStore = (initialState) => createStoreWithMiddleware(reducer, initialState);
+const configureStore = createStore(
+  reducer,
+  applyMiddleware(logger, thunk),
+);
+
 export default configureStore;
