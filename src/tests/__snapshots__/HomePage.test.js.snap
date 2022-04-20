@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page test countries container test 1`] = `
+<div>
+  <header
+    className="cover"
+  >
+    <div
+      className="title"
+    >
+      <div
+        className="logo"
+      >
+        <img
+          alt="virus-transmission"
+          src="https://img.icons8.com/external-wanicon-lineal-wanicon/120/ffffff/external-world-virus-transmission-wanicon-lineal-wanicon.png"
+        />
+        <div>
+          <h1>
+            2022
+          </h1>
+          <h3>
+            covid-19 world tracker
+          </h3>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div
+    className="searchBar"
+  >
+    <div
+      className="dateSelection"
+    >
+      <h2>
+         Stats by country
+      </h2>
+      <h3
+        className="date"
+      >
+        2022-04-21
+      </h3>
+    </div>
+    <input
+      className="searchField"
+      id="search"
+      name="search"
+      onChange={[Function]}
+      placeholder="Search Countries"
+      type="text"
+      value=""
+    />
+  </div>
+  <ul
+    className="Countriescontainer"
+  />
+</div>
+`;
+
+exports[`Home page test country cards test 1`] = `
+<div
+  className="card"
+>
+  <a
+    className=""
+    href="/Iran"
+    onClick={[Function]}
+  >
+    <li
+      className="countryCard"
+    >
+      <div
+        className="mapBox"
+      >
+        <img
+          alt="map"
+          className="map"
+          onError={[Function]}
+          src="https://mapsvg.com/static/maps/geo-calibrated/iran.svg"
+        />
+      </div>
+      <h4>
+        Iran
+      </h4>
+      <h4>
+        100
+      </h4>
+    </li>
+  </a>
+</div>
+`;

@@ -17,7 +17,7 @@ const dateFormater = () => {
   return dateString;
 };
 
-function Country({ name, today_confirmed }) {
+export function Country({ name, today_confirmed }) {
   return (
     <div className="card">
       <NavLink to={`/${name}`}>
