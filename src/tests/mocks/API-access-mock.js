@@ -1,4 +1,4 @@
-export const GET_COUNTRIES = 'bookStore/books/COUNTRIES';
+export const GET_COUNTRIES = 'country/COUNTRIES';
 
 export const setCounrties = (payload) => ({
   type: GET_COUNTRIES,
