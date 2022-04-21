@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Covid-19 Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and it's a responsive web application to show a list of current covid casses classified by countries and regions, according to the data provided by [Johns Hopkins University](https://systems.jhu.edu/research/public-health/ncov/).
+It is a single-page application (SPA) built with React and Redux.
 
-## Available Scripts
+The original design idea is based on a template by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) and it licenced by [Creative Commons](https://creativecommons.org/licenses/by-nc/4.0/).
 
-In the project directory, you can run:
+When the page loads, the webapp's home page shows the list of categories that could be filtered out by country name. When the user clicks (or taps) on a category item, the application navigates to the details page.
 
-### `npm start`
+![image](https://user-images.githubusercontent.com/78906545/164553000-3d53c496-6d6b-46fd-897c-a985bd998c2b.png)
 
-Runs the app in the development mode.\
+In the details page, the webapp retrieves data from the API to show detailed data of covid cases in the category. When the user clicks on the "Back" button (<), the user navigates to the home page.
+
+![image](https://user-images.githubusercontent.com/78906545/164553385-55134145-8cef-49e8-97a6-2d11b7e42342.png)
+
+you can watch [this video](https://www.loom.com/share/f258252540d0484686786b376b972df6) presenting the features of the project in 4 minutes.
+
+
+## Live Demo
+[Covid Tracker Live Demo](https://bright-moonbeam-27f9a1.netlify.app/)
+
+## Built With
+- React
+- Redux
+
+## Getting Started
+**step1** cloning the project:
+```
+git clone https://github.com/ZahraArshia/bookstore.git
+```
+**step2** buile the project:
+```
+npm run build
+```
+
+Builds the app for production to the `build` folder.
+The build is minified and the filenames include the hashes.
+
+```
+npm start
+```
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
 
-### `npm test`
+**step3** test
+```
+npm test
+```
+Launches the test runner in the interactive watch mode.
+## Author
+**Zahra**
+- GitHub: [@githubhandle](https://github.com/ZahraArshia)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/zahra-arshia/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributing
 
-### `npm run build`
+Contributions, issues, and feature requests are welcome!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feel free to check the [issues page](../../issues/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Show your support
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Give a ⭐️ if you like this project!
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](./MIT.md) licensed.

@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Countries snapshot renders correctly 1`] = `
+<div>
+  <nav>
+    <section
+      className="navLinks"
+    >
+      <div>
+        <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt="back"
+            src="https://img.icons8.com/ios-filled/24/ffffff/back.png"
+          />
+        </a>
+      </div>
+      <div
+        className="mainTitle"
+      >
+        <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+        >
+          Covid-19 Tracker
+        </a>
+      </div>
+      <div
+        className="navIcons"
+      >
+        <img
+          alt="mic"
+          className="navIcon"
+          src="https://img.icons8.com/fluency-systems-filled/24/ffffff/microphone.png"
+        />
+        <img
+          alt="settings"
+          className="navIcon"
+          src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/24/ffffff/external-setting-essentials-pack-tanah-basah-glyph-tanah-basah.png"
+        />
+      </div>
+    </section>
+  </nav>
+  <div>
+    <header
+      className="cover"
+    >
+      <div
+        className="title"
+      >
+        <div
+          className="logo"
+        >
+          <img
+            alt="virus-transmission"
+            src="https://img.icons8.com/external-wanicon-lineal-wanicon/120/ffffff/external-world-virus-transmission-wanicon-lineal-wanicon.png"
+          />
+          <div>
+            <h1>
+              2022
+            </h1>
+            <h3>
+              covid-19 world tracker
+            </h3>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      className="searchBar"
+    >
+      <div
+        className="dateSelection"
+      >
+        <h2>
+           Stats by country
+        </h2>
+        <h3
+          className="date"
+        >
+          2022-04-21
+        </h3>
+      </div>
+      <input
+        className="searchField"
+        id="search"
+        name="search"
+        onChange={[Function]}
+        placeholder="Search Countries"
+        type="text"
+        value=""
+      />
+    </div>
+    <ul
+      className="Countriescontainer"
+    />
+  </div>
+</div>
+`;
